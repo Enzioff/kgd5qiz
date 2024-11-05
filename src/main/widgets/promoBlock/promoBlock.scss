@@ -1,0 +1,8 @@
+.promo-block {
+  display: flex;
+  gap: 20px;
+
+  @include r($mobile) {
+    flex-direction: column;
+  }
+}

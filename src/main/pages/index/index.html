@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<aside class="socials socials--fixed" data-social>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-tg"></use>
+        </svg>
+    </a>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-vk"></use>
+        </svg>
+    </a>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-wa"></use>
+        </svg>
+    </a>
+</aside>
+<div class="main">
+    <%= htmlWebpackPlugin.options.widgets.intro %>
+    <%= htmlWebpackPlugin.options.widgets.quiz %>
+    <%= htmlWebpackPlugin.options.widgets.map %>
+    <%= htmlWebpackPlugin.options.widgets.indexVideo %>
+    <%= htmlWebpackPlugin.options.widgets.upcoming %>
+    <%= htmlWebpackPlugin.options.widgets.reviews %>
+    <%= htmlWebpackPlugin.options.widgets.application %>
+    <%= htmlWebpackPlugin.options.widgets.newsBlock %>
+    <%= htmlWebpackPlugin.options.widgets.promoBlock %>
+</div>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+<%= htmlWebpackPlugin.options.widgets.hidden %>
+<div class="up">
+    <svg class="up__icon">
+        <use xlink:href="./assets/sprite.svg#arrow-up"></use>
+    </svg>
+</div>
+</body>
+
+</html>

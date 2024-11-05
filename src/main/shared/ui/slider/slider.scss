@@ -1,0 +1,277 @@
+.slider {
+  &--games {
+    width: 1060px;
+
+    @include r($mobile) {
+      width: 100%;
+    }
+
+    .swiper {
+      @include r($mobile) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 14px;
+      }
+    }
+
+    .swiper-wrapper {
+      align-items: flex-end;
+    }
+  }
+
+  &--hidden {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &--overflow {
+    .swiper {
+      padding-bottom: 40px;
+    }
+  }
+
+  &--buttons {
+    position: relative;
+
+    .swiper {
+      position: static;
+    }
+  }
+
+  &--visible {
+    .swiper {
+      overflow: visible;
+    }
+  }
+
+  &--animated {
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+  }
+
+  &--coverflow {
+    .swiper-slide {
+      width: auto;
+    }
+  }
+}
+
+.swiper-control {
+  pointer-events: none;
+
+  &--question {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: auto;
+    margin: 0 76px 0 auto;
+
+    @include r($mobile) {
+      justify-content: center;
+      gap: 0;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+
+    .swiper-btn--next {
+      @include r($mobile) {
+        position: absolute;
+        top: 50%;
+        right: -18px;
+        width: 36px;
+        height: 36px;
+        background-color: #C4F5FF;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        svg {
+          fill: $very-dark-blue;
+        }
+      }
+    }
+  }
+
+  &--intro {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    .swiper-btn {
+      background-color: transparent;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+      }
+    }
+  }
+
+  &--default {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 160px);
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @include r($mobile) {
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--single {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% + 80px);
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @include r($mobile) {
+      position: static;
+      width: 100%;
+      padding: 20px;
+      transform: none;
+    }
+
+    .swiper-btn {
+      box-shadow: none;
+    }
+  }
+
+  &--gallery {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 1;
+
+    @include r($mobile) {
+      right: 18px;
+      bottom: 18px;
+    }
+  }
+}
+
+.swiper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+  background-color: $very-dark-blue;
+  box-shadow: 0 4px 34px 0 #8FA0AF4D;
+  cursor: pointer;
+  pointer-events: auto;
+
+  svg {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    fill: $yellow;
+  }
+
+  &--prev {
+    transform: rotate(-180deg);
+  }
+
+  &--disabled {
+    background-color: rgba(#0A2336, 0.1);
+    box-shadow: none;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &--blue {
+    background-color: rgba($cyan, 0.1);
+    box-shadow: none;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &--light {
+    background-color: rgba(#0A2336, 0.1);
+    box-shadow: none;
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  &-bullet {
+    display: flex;
+    width: 24px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #019EB7;
+    transition: width .2s linear;
+    cursor: pointer;
+
+    &-active {
+      width: 40px;
+      height: 6px;
+      background-color: $yellow;
+    }
+  }
+
+  &--blue {
+    .swiper-pagination-bullet {
+      background-color: #D5E6F5;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $cyan;
+    }
+  }
+}
+
+.swiper-slide-active {
+  @include r($mobile) {
+    .article-upcoming {
+      background-color: #142D40;
+      box-shadow: 0 14px 60px 0 #00051899;
+    }
+  }
+}
+
+
+.swiper-slide-active {
+  .article-game {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    @include r($mobile) {
+      padding: 24px 20px 17px;
+    }
+
+    .article-game__bg {
+      display: flex;
+    }
+    .article-game__detail {
+      display: flex;
+    }
+  }
+}

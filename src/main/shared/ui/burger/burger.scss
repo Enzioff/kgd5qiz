@@ -1,0 +1,40 @@
+.burger {
+	position: relative;
+	display: flex;
+	width: 25px;
+	height: 14px;
+	overflow: hidden;
+	z-index: 4;
+	@include rmin($mobile) {
+		display: none;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		display: flex;
+		width: 25px;
+		height: 2px;
+		background-color: white;
+		transition: 0.2s linear;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		top: 10px;
+	}
+
+	&__item {
+		position: absolute;
+		top: 5px;
+		display: flex;
+		width: 25px;
+		height: 2px;
+		background-color: white;
+		transition: 0.2s linear;
+	}
+}

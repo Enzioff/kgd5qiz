@@ -1,0 +1,85 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @include r($mobile) {
+    gap: 30px;
+  }
+
+  &__about {
+    display: grid;
+    grid-template-columns: 188px 1fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21.6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+
+    &--right {
+      text-align: right;
+    }
+
+    span {
+      color: $cyan;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26.4px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $cyan;
+  }
+
+  &__number {
+    display: block;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 96px;
+    color: $cyan;
+
+    @include r($mobile) {
+      font-size: 70px;
+      line-height: 84px;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    gap: 20px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

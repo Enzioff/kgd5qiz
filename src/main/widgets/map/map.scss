@@ -1,0 +1,40 @@
+.map__content {
+  display: flex;
+  gap: 80px;
+  padding-top: 50px;
+
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    color: #002d40;
+  }
+
+  &--title {
+    text-transform: uppercase;
+    font-weight: $heading;
+    font-size: 40px;
+    max-width: 200px;
+
+    @include r($mobile) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &--descr {
+    font-size: 21px;
+    max-width: 320px;
+
+    @include r($mobile) {
+      font-size: 16px;
+      line-height: 25.6px;
+    }
+  }
+}

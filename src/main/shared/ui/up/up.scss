@@ -1,0 +1,28 @@
+.up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #144154;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+  transition: .2s linear;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+  }
+}

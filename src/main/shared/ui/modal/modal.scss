@@ -1,0 +1,169 @@
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  padding: 61px 70px;
+  background-color: #DFF0FF;
+  border-radius: 30px;
+
+  @include r($mobile) {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  &--success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    width: max-content;
+    max-width: 414px;
+    padding: 30px 40px;
+
+    .modal__title {
+      margin-bottom: 0;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 36px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $very-dark-blue;
+
+    @include r($mobile) {
+      font-size: 30px;
+      line-height: 48px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 41px;
+
+    @include r($mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  &__text {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 29.4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+
+    @include r($mobile) {
+      flex-direction: column;
+    }
+
+    &--revert {
+      @include r($mobile) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @include r($mobile) {
+      display: none;
+    }
+
+    svg {
+      display: flex;
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__footer {
+    max-width: 402px;
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      letter-spacing: 0.02em;
+      color: rgba($very-dark-blue, 0.4);
+
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 25px;
+    border-radius: 90px;
+    background-color: $cyan;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.02em;
+    color: $very-dark-blue;
+    text-align: center;
+    box-shadow: 0 21px 38px 0 #82A7C391;
+    cursor: pointer;
+
+    &--yellow {
+      background-color: $yellow;
+    }
+  }
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: auto;
+  }
+}
+
+.overflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000000, 0.7);
+  z-index: 2;
+}

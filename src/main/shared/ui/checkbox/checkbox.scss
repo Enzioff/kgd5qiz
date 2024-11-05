@@ -1,0 +1,54 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  @include r($mobile) {
+    width: 100%;
+  }
+
+  input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: $white;
+    cursor: pointer;
+
+    &:checked {
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: flex;
+      width: 29px;
+      height: 29px;
+      border-radius: 7px;
+      background-color: $cyan;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+    }
+  }
+
+  span {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 29.4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $very-dark-blue;
+
+    @include r($mobile) {
+      font-size: 16px;
+      line-height: 22.4px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  justify-content: center;
+  gap: 40px 20px;
+
+  &--games {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 340px));
+
+    &.clip {
+      @include r($mobile) {
+        & > *:nth-child(1n + 5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--features {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include r($mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--package {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 340px));
+    gap: 30px 20px;
+
+    &.clip {
+      @include r($mobile) {
+        & > *:nth-child(1n + 5) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.about-preview {
+  display: grid;
+  grid-template-columns: 360px 700px;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__video {
+
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    color: $white;
+  }
+
+  &__text {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33.6px;
+    color: $white;
+  }
+}

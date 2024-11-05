@@ -1,0 +1,48 @@
+.section {
+	&--color {
+		&--light {
+			background: #dff0ff;
+		}
+
+		&--dark {
+			background: #0a2336;
+		}
+
+		&--primary {
+			background: $cyan;
+		}
+	}
+
+	&--bg {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&--intro {
+			position: relative;
+		}
+	}
+
+	&--offset {
+		margin-top: -109px;
+		padding-top: 109px;
+	}
+
+	&--clip {
+		position: relative;
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 109px), 0% 100%);
+	}
+
+	&--border {
+		border-top: 1px solid rgba($white, .2);
+		border-bottom: 1px solid rgba($white, .2);
+
+		@include r($mobile) {
+			border: none;
+		}
+	}
+
+	&--pattern {
+		background-blend-mode: soft-light;
+	}
+}

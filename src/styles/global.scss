@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-x: hidden;
+  background-color: #DFF0FF;
+}
+
+.main {
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.main {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.fancybox.fancybox__content {
+  padding: 0;
+  max-width: 1192px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  --fancybox-color: #002D40;
+}
+
+.fancybox.fancybox__content > .f-button.is-close-btn {
+  top: 30px;
+  right: 30px;
+
+}
+
+svg {
+  fill: currentColor;
+}
+
+.mob-hidden {
+  @include r($mobile) {
+    display: none;
+  }
+}
+
+.desktop-hidden {
+  @include rmin($mobile) {
+    display: none;
+  }
+}
+
+.mobile-only {
+  display: none;
+  @include r($mobile) {
+    display: flex;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.z-index {
+  &-1 {
+    z-index: 1;
+  }
+
+  &-2 {
+    z-index: 2;
+  }
+
+  &-3 {
+    z-index: 3;
+  }
+
+  &-4 {
+    z-index: 4;
+  }
+
+  &-5 {
+    z-index: 5;
+  }
+}
+
+.text-overflow {
+  &--1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  &--2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  &--3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &--4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  &--5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  &--6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+
+  &--7 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.colored {
+  color: $yellow;
+}
+
+.order {
+  &-desktop--1 {
+    @include rmin($mobile + 1) {
+      order: 1;
+    }
+  }
+
+  &-desktop--2 {
+    @include rmin($mobile + 1) {
+      order: 2;
+    }
+  }
+
+  &-desktop--3 {
+    @include rmin($mobile + 1) {
+      order: 3;
+    }
+  }
+
+  &-desktop--4 {
+    @include rmin($mobile + 1) {
+      order: 4;
+    }
+  }
+}
+
+.fixed {
+  overflow: hidden;
+}

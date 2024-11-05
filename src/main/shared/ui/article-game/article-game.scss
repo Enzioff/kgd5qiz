@@ -1,0 +1,131 @@
+.article-game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 30px 33px;
+  border: 2px solid $border-dark;
+  background-color: $very-dark-blue;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+
+  @include r($mobile) {
+    margin-bottom: -1px;
+    padding: 24px 20px 17px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 0;
+    pointer-events: none;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1;
+  }
+
+  &__preview,
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__text,
+  &__date {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: $cyan;
+  }
+
+  &__date {
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  &__detail {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 1;
+
+    @include r($mobile) {
+      display: flex;
+    }
+  }
+
+  &__title,
+  &__time {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: $light;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .article-game__icon {
+      fill: $cyan;
+    }
+
+    .article-game__text {
+      font-weight: 600;
+      line-height: 25px;
+      letter-spacing: 0.05em;
+    }
+
+    &--yellow {
+      .article-game__text {
+        color: $yellow;
+      }
+
+      .article-game__icon {
+        fill: $yellow;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 21px;
+    height: 21px;
+
+    &--small {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

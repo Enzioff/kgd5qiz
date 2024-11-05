@@ -1,0 +1,146 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &--decor {
+      position: absolute;
+
+      @include r($mobile) {
+        position: static;
+      }
+
+      &--1 {
+        top: 49%;
+        left: 7.6%;
+      }
+
+      &--2 {
+        top: 2.7%;
+        left: 82.3%;
+
+        @include r($mobile) {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+
+    &--1 {
+      top: 50%;
+      left: 18.4%;
+    }
+    &--2 {
+      top: 1%;
+      left: 60.4%;
+    }
+  }
+
+  .head {
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    letter-spacing: 0.05em;
+    color: $very-dark-blue;
+  }
+
+  &__value {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 84px;
+    color: $cyan;
+
+    span {
+      font-size: 21px;
+      line-height: 25.2px;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    display: flex;
+    width: 340px;
+    height: 340px;
+    border: 72px solid $cyan;
+    border-radius: 100%;
+
+    @include r($mobile) {
+      align-self: center;
+      width: 236px;
+      height: 236px;
+      border-width: 50px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -72px;
+      left: -72px;
+      width: 340px;
+      height: 340px;
+      border: 72px solid $yellow;
+      border-radius: 100%;
+      clip-path: polygon(42% 0, 100% 0, 100% 100%, 50% 50%);
+      @include r($mobile) {
+        top: -50px;
+        left: -50px;
+        width: 236px;
+        height: 236px;
+        border-width: 50px;
+        border-color: $very-dark-blue;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10px;
+    gap: 1px 20px;
+  }
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Держи пять</title>
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+<header class="header header--main header--light">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="logo" href="/">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <div class="city-chooser mob-hidden">
+                <span>Калининград</span>
+                <svg class="icon--chooser">
+                    <use href="assets/sprite.svg#chevrone-city"></use>
+                </svg>
+            </div>
+            <nav class="nav mob-hidden">
+                <a class="nav__item" href="/about.html">Об игре</a>
+                <a class="nav__item" href="/news.html">Новости</a>
+                <a class="nav__item" href="/franchise.html">Франшиза</a>
+                <a class="nav__item" href="/corporative.html">Корпоративы</a>
+                <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                <a class="nav__item" href="/contacts.html">Контакты</a>
+            </nav>
+            <div class="burger" data-burger>
+                <span class="burger__item"></span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu" data-menu-mobile>
+        <a class="logo" href="/">
+            <img src="assets/images/logo.svg" alt="">
+        </a>
+        <div class="city-chooser">
+            <span>Калининград</span>
+        </div>
+        <nav class="nav">
+            <a class="nav__item" href="/about.html">Об игре</a>
+            <a class="nav__item" href="/news.html">Новости</a>
+            <a class="nav__item" href="/francise.html">Франшиза</a>
+            <a class="nav__item" href="/corporates.html">Корпоративы</a>
+            <a class="nav__item" href="/feedback.html">Обратная связь</a>
+            <a class="nav__item" href="/contacts.html">Контакты</a>
+        </nav>
+    </div>
+</header>
+<div class="main">
+    <section class="section section--color--dark section--bg section--pattern"
+         style="background-image: url('./assets/images/pattern.png')">
+    <div class="container">
+        <div class="page-intro">
+            <div class="page-intro__head">
+                <h1 class="page-intro__title mb-20">
+                    Корпоративы
+                </h1>
+                <p class="page-intro__text mb-45">
+                    Держи Пять! - это прекрасный вариант для<br>проведения дня рождения, корпоратива или<br>даже этапа
+                    конкурса красоты.
+                </p>
+                <div class="page-intro__meta">
+                    <button class="button button--small">
+                        <span>Скачать демо-версию игры</span>
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#icon-folder"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pt-40 pb-100 pbm-60">
+    <div class="slider slider--animated" data-slider="infinite">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-1.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-2.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-3.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-4.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-5.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="article-logo">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/logos/logo-6.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-150 pbm-110">
+    <div class="container">
+        <div class="head mb-50">
+            <h2 class="title title--extra-bold title--color--dark">заголовок</h2>
+        </div>
+        <div class="grid grid--games clip mbm-20" data-show>
+            <div class="article-game-card" data-fancybox data-src="#article-game-card-1">
+                <picture class="article-game-card__picture">
+                    <img src="./assets/images/game-preview-1.png" alt="">
+                </picture>
+                <p class="article-game-card__text">
+                    Вкусная игра от “Держи пять!”
+                </p>
+                <div class="hidden">
+                    <div class="fancybox" id="article-game-card-1">
+                        <div class="info">
+                            <picture class="info__picture">
+                                <img src="./assets/images/preview-game.png" alt="">
+                            </picture>
+                            <div class="info__detail">
+                                <h3 class="info__title">Вкусная игра от “Держи пять”</h3>
+                                <p class="info__text">
+                                    Регистрация на Чёрную игру 2024 года официально открыта!<br>
+                                    <br>
+                                    Чёрная игра = чёрный юмор.<br>
+                                    Данной игрой мы никого не хотим оскорбить или затронуть чьи-то чувства.<br>
+                                    <br>
+                                    На данной игре мы поднимаем самые запретные темы, которые обычно в обществе обсуждают
+                                    шепотом. Жёстко, интересно и очень смешно – всё это на Чёрной игре. На игре будет
+                                    использоваться нецензурная лексика!<br>
+                                    Игра строго 18+!!!<br>
+                                    <br>
+                                    Итак, 7 октября в 19:00 в пабе
+                                    "Лондон" пройдет Чёрная игра. Количество мест ограничено, поэтому поторопитесь с
+                                    регистрацией!
+                                </p>
+                                <form action="#">
+                                    <input type="text" hidden name="ID" value="2">
+                                    <button type="submit" class="button button--blue">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-game-card" data-fancybox data-src="#article-game-card-2">
+                <picture class="article-game-card__picture">
+                    <img src="./assets/images/game-preview-1.png" alt="">
+                </picture>
+                <p class="article-game-card__text">
+                    Вкусная игра от “Держи пять!”
+                </p>
+                <div class="hidden">
+                    <div class="fancybox" id="article-game-card-2">
+                        <div class="info">
+                            <picture class="info__picture">
+                                <img src="./assets/images/preview-game.png" alt="">
+                            </picture>
+                            <div class="info__detail">
+                                <h3 class="info__title">Вкусная игра от “Держи пять 2”</h3>
+                                <p class="info__text">
+                                    Регистрация на Чёрную игру 2024 года официально открыта!<br>
+                                    <br>
+                                    Чёрная игра = чёрный юмор.<br>
+                                    Данной игрой мы никого не хотим оскорбить или затронуть чьи-то чувства.<br>
+                                    <br>
+                                    На данной игре мы поднимаем самые запретные темы, которые обычно в обществе обсуждают
+                                    шепотом. Жёстко, интересно и очень смешно – всё это на Чёрной игре. На игре будет
+                                    использоваться нецензурная лексика!<br>
+                                    Игра строго 18+!!!<br>
+                                    <br>
+                                    Итак, 7 октября в 19:00 в пабе
+                                    "Лондон" пройдет Чёрная игра. Количество мест ограничено, поэтому поторопитесь с
+                                    регистрацией!
+                                </p>
+                                <form action="#">
+                                    <input type="text" hidden name="ID" value="2">
+                                    <button type="submit" class="button button--blue">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-game-card" data-fancybox data-src="#article-game-card-3">
+                <picture class="article-game-card__picture">
+                    <img src="./assets/images/game-preview-1.png" alt="">
+                </picture>
+                <p class="article-game-card__text">
+                    Вкусная игра от “Держи пять!”
+                </p>
+                <div class="hidden">
+                    <div class="fancybox" id="article-game-card-3">
+                        <div class="info">
+                            <picture class="info__picture">
+                                <img src="./assets/images/preview-game.png" alt="">
+                            </picture>
+                            <div class="info__detail">
+                                <h3 class="info__title">Вкусная игра от “Держи пять 3”</h3>
+                                <p class="info__text">
+                                    Регистрация на Чёрную игру 2024 года официально открыта!<br>
+                                    <br>
+                                    Чёрная игра = чёрный юмор.<br>
+                                    Данной игрой мы никого не хотим оскорбить или затронуть чьи-то чувства.<br>
+                                    <br>
+                                    На данной игре мы поднимаем самые запретные темы, которые обычно в обществе обсуждают
+                                    шепотом. Жёстко, интересно и очень смешно – всё это на Чёрной игре. На игре будет
+                                    использоваться нецензурная лексика!<br>
+                                    Игра строго 18+!!!<br>
+                                    <br>
+                                    Итак, 7 октября в 19:00 в пабе
+                                    "Лондон" пройдет Чёрная игра. Количество мест ограничено, поэтому поторопитесь с
+                                    регистрацией!
+                                </p>
+                                <form action="#">
+                                    <input type="text" hidden name="ID" value="2">
+                                    <button type="submit" class="button button--blue">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button button--news centered desktop-hidden" data-show-more>Показать ещё</button>
+    </div>
+</section>
+<section class="section section--clip section--color--light pb-200">
+    <div class="container">
+        <div class="head mb-50">
+            <h2 class="title title--extra-bold title--color--dark">
+                Держи Пять! - это прекрасный вариант для проведения дня рождения, корпоратива или даже этапа конкурса
+                красоты.
+            </h2>
+        </div>
+        <div class="grid grid--features">
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-location.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    мы можем провести игру в любом месте;
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-hearts.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    брендируем бланки ответов и презентации;
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-chat.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    подготовим для вас вопросы, проведем опросы и запишем видеоролики;
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-calendar.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    уложимся в любые временные рамки;
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-stars.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    сделаем квиз тематическим;
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-gamepad.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    оставим максимально положительные впечатления.
+                </p>
+            </div>
+            <div class="article-feature">
+                <picture class="article-feature__picture">
+                    <img src="./assets/images/feature-icons/icon-settings.svg" alt="">
+                </picture>
+                <p class="article-feature__text">
+                    обеспечим техническую поддержку;
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section--color--dark section--offset pt-100 pb-100 pbm-70">
+    <div class="container">
+        <div class="head mb-50">
+            <h2 class="title title--extra-bold title--color--white">пакеты игры</h2>
+        </div>
+        <div class="grid grid--package clip mbm-20" data-show>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+            <article class="article-package">
+                <div class="article-package__head">
+                    <h3 class="article-package__title">“Классический”</h3>
+                    <div class="article-package__info">
+                        <p class="article-package__preview">4 тура</p>
+                        <p class="article-package__preview">20 вопросов</p>
+                    </div>
+                </div>
+                <div class="article-package__body">
+                    <p class="article-package__text">
+                        Все вопросы в <span>профессиональном формате коллектива + дизайнерское оформление бланков</span>
+                        и
+                        презентации игры под заказчика
+                    </p>
+                    <div class="article-package__detail">
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                            </svg>
+                            <span>50 000 ₽</span>
+                        </div>
+                        <div class="article-package__badge">
+                            <svg class="article-package__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-clock-slim"></use>
+                            </svg>
+                            <span>1 час</span>
+                        </div>
+                    </div>
+                    <button class="article-package__button button">Заказать игру</button>
+                </div>
+            </article>
+        </div>
+        <button class="button button--news centered desktop-hidden" data-show-more>Показать ещё</button>
+    </div>
+</section>
+</div>
+<footer class="footer footer--page section--bg" style="background-image: url('assets/images/footer-bg.jpg')">
+    <div class="container">
+        <div class="footer__wrapper">
+            <img src="assets/images/logo.svg" alt="" class="footer__logo">
+            <div class="footer__info">
+                <div class="footer__block footer__block--full order-desktop--4">
+                    <div class="footer--title">
+                        Разделы
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__item" href="/about.html">Об игре</a>
+                        <a class="nav__item" href="/corporates.html">Корпоративы</a>
+                        <a class="nav__item" href="/news.html">Новости</a>
+                        <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                        <a class="nav__item" href="/francise.html">Франшиза</a>
+                        <a class="nav__item" href="/contacts.html">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__block order-desktop--1">
+                    <div class="footer--title">
+                        Социальные сети
+                    </div>
+                    <aside class="footer__socials socials">
+                        <a href="#" class="socials__link">
+                            <svg class="icon--tg">
+                                <use href="assets/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--vk">
+                                <use href="assets/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--wa">
+                                <use href="assets/sprite.svg#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </aside>
+                </div>
+                <div class="footer__block order-desktop--2">
+                    <div class="footer--title">
+                        Контакты
+                    </div>
+                    <a href="tel:+7 (909) 792-22-20">+7 (909) 792-22-20</a>
+                </div>
+                <div class="footer__block order-desktop--3">
+                    <div class="footer--title">
+                        E-mail
+                    </div>
+                    <a href="mailto:+7 (909) 792-22-20">info@logoipsum.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__development">
+                    <a href="#">
+                        Разработано
+                        <img src="assets/images/diez-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__line"></div>
+
+                <div class="footer__legal">
+                    <p class="copyright">© 2024 «Держи пять». Все права защищены.</p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="hidden">
+    <div class="modal" id="game-register">
+        <button class="modal__close" data-close>
+            <svg>
+                <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title">РЕГИСТРАЦИЯ НА ИГРУ</h2>
+        <form action="#" class="modal__form">
+            <div class="modal__wrapper">
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Имя капитана*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Название команды*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Телефон</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Промокод</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Почта*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Откуда вы узнали о нас ?</span>
+                </label>
+            </div>
+            <div class="modal__block">
+                <p class="modal__text">кол-во человек, которое пойдёт:</p>
+                <div class="counter" data-counter>
+                    <button class="counter__button counter__button--prev" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <input type="number" class="input input--number" value="0" max="10" data-counter-input>
+                    <button class="counter__button counter__button--next" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal__block modal__block--revert">
+                <div class="modal__control">
+                    <button class="modal__button">Отправить заявку на игру</button>
+                    <button class="modal__button modal__button--yellow desktop-hidden" data-close>Отменить</button>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>В нашей команде<br>есть именинник</span>
+                </label>
+            </div>
+        </form>
+        <div class="modal__footer">
+            <p>Нажимая кнопку «Отправить заявку на игру», вы соглашаетесь с <a href="#">условиями пользовательского
+                соглашения</a></p>
+        </div>
+    </div>
+    <div class="modal modal--success" id="success">
+        <picture class="modal__picture">
+            <img src="./assets/images/logo-success.svg" alt="">
+        </picture>
+        <h2 class="modal__title">ваша заявка
+            успешно отправлена!</h2>
+    </div>
+</div>
+<!-- Временная секция для навигации по сайту -->
+<section class="section">
+    <div class="container">
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./about.html" class="temp__link">О нас</a>
+            <a href="./contacts.html" class="temp__link">Контакты</a>
+            <a href="./corporative.html" class="temp__link">Корпоратив</a>
+            <a href="./feedback.html" class="temp__link">Обратная связь</a>
+            <a href="./franchise.html" class="temp__link">Франчайзи</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./newsDetail.html" class="temp__link">Новости деталка</a>
+        </div>
+    </div>
+</section>
+<div class="up">
+    <svg class="up__icon">
+        <use xlink:href="./assets/sprite.svg#arrow-up"></use>
+    </svg>
+</div>
+<script defer src="bundle.js"></script></body>
+
+</html>

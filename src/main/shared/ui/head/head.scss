@@ -1,0 +1,19 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include r($mobile) {
+    justify-content: flex-start;
+  }
+
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &--column {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

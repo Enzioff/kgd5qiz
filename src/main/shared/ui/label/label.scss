@@ -1,0 +1,23 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background-color: $cyan;
+  border-radius: 100px;
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.2px;
+    letter-spacing: 0.05em;
+    color: $white;
+  }
+}

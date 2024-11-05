@@ -1,0 +1,21 @@
+.star {
+  cursor: pointer;
+
+  &.active {
+    .star__icon {
+      fill: $cyan;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  &__icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    fill: rgba(#C5F5FF, .3);
+    transition: .2s linear;
+  }
+}

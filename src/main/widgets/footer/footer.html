@@ -1,0 +1,147 @@
+<footer class="footer section--bg" style="background-image: url('assets/images/footer-bg.jpg')">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <img src="assets/images/logo.svg" alt="" class="footer__logo">
+                <div class="footer__block footer__block--full">
+                    <div class="footer--title">
+                        Разделы
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__item" href="/about.html">Об игре</a>
+                        <a class="nav__item" href="/corporates.html">Корпоративы</a>
+                        <a class="nav__item" href="/news.html">Новости</a>
+                        <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                        <a class="nav__item" href="/francise.html">Франшиза</a>
+                        <a class="nav__item" href="/contacts.html">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        Социальные сети
+                    </div>
+                    <aside class="footer__socials socials">
+                        <a href="#" class="socials__link">
+                            <svg class="icon--tg">
+                                <use href="assets/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--vk">
+                                <use href="assets/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--wa">
+                                <use href="assets/sprite.svg#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </aside>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        Контакты
+                    </div>
+                    <a href="tel:+7 (909) 792-22-20">+7 (909) 792-22-20</a>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        E-mail
+                    </div>
+                    <a href="mailto:+7 (909) 792-22-20">info@logoipsum.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__development">
+                    <a href="#">
+                        Разработано
+                        <img src="assets/images/diez-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__line"></div>
+
+                <div class="footer__legal">
+                    <p class="copyright">© 2024 «Держи пять». Все права защищены.</p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="hidden">
+    <div class="modal" id="game-register">
+        <button class="modal__close" data-close>
+            <svg>
+                <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title">РЕГИСТРАЦИЯ НА ИГРУ</h2>
+        <form action="#" class="modal__form">
+            <div class="modal__wrapper">
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Имя капитана*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Название команды*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Телефон</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Промокод</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Почта*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Откуда вы узнали о нас ?</span>
+                </label>
+            </div>
+            <div class="modal__block">
+                <p class="modal__text">кол-во человек, которое пойдёт:</p>
+                <div class="counter" data-counter>
+                    <button class="counter__button counter__button--prev" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <input type="number" class="input input--number" value="0" max="10" data-counter-input>
+                    <button class="counter__button counter__button--next" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal__block modal__block--revert">
+                <div class="modal__control">
+                    <button class="modal__button">Отправить заявку на игру</button>
+                    <button class="modal__button modal__button--yellow desktop-hidden" data-close>Отменить</button>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>В нашей команде<br>есть именинник</span>
+                </label>
+            </div>
+        </form>
+        <div class="modal__footer">
+            <p>Нажимая кнопку «Отправить заявку на игру», вы соглашаетесь с <a href="#">условиями пользовательского
+                соглашения</a></p>
+        </div>
+    </div>
+    <div class="modal modal--success" id="success">
+        <picture class="modal__picture">
+            <img src="./assets/images/logo-success.svg" alt="">
+        </picture>
+        <h2 class="modal__title">ваша заявка
+            успешно отправлена!</h2>
+    </div>
+</div>

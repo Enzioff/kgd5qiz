@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Держи пять</title>
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+<header class="header header--main header--light">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="logo" href="/">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <div class="city-chooser mob-hidden">
+                <span>Калининград</span>
+                <svg class="icon--chooser">
+                    <use href="assets/sprite.svg#chevrone-city"></use>
+                </svg>
+            </div>
+            <nav class="nav mob-hidden">
+                <a class="nav__item" href="/about.html">Об игре</a>
+                <a class="nav__item" href="/news.html">Новости</a>
+                <a class="nav__item" href="/franchise.html">Франшиза</a>
+                <a class="nav__item" href="/corporative.html">Корпоративы</a>
+                <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                <a class="nav__item" href="/contacts.html">Контакты</a>
+            </nav>
+            <div class="burger" data-burger>
+                <span class="burger__item"></span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu" data-menu-mobile>
+        <a class="logo" href="/">
+            <img src="assets/images/logo.svg" alt="">
+        </a>
+        <div class="city-chooser">
+            <span>Калининград</span>
+        </div>
+        <nav class="nav">
+            <a class="nav__item" href="/about.html">Об игре</a>
+            <a class="nav__item" href="/news.html">Новости</a>
+            <a class="nav__item" href="/francise.html">Франшиза</a>
+            <a class="nav__item" href="/corporates.html">Корпоративы</a>
+            <a class="nav__item" href="/feedback.html">Обратная связь</a>
+            <a class="nav__item" href="/contacts.html">Контакты</a>
+        </nav>
+    </div>
+</header>
+<div class="main">
+    <section class="section section--color--dark section--bg section--pattern" style="background-image: url('../assets/images/pattern.png')">
+    <div class="container">
+        <div class="about about__intro">
+            <div class="about__text">
+                <span class="pretitle pretitle--white">
+                    Наши игры помогут
+                </span>
+                <h1 class="title title--color--white title--extra-bold about--title">
+                    Выездной<br> тимбилдинг<br> <span class="colored">в игровом</span><br> формате
+                </h1>
+                <a href="#" class="button button--about">
+                    Читать подробнее
+                    <svg class="icon--ranking">
+                        <use href="assets/sprite.svg#icon-ranking"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="about__slider slider" data-slider="about">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-cyan.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-yellow.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-cyan.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-cyan.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-yellow.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview">
+                                <picture class="article-preview__picture">
+                                    <img src="./assets/images/about-square-cyan.png" alt="">
+                                </picture>
+                                <div class="article-preview__info">
+                                    <p class="article-preview__text article-preview__text--bold">200+</p>
+                                    <p class="article-preview__text">заголовок</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-control swiper-control--default mob-hidden">
+                        <button class="swiper-btn swiper-btn--prev">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper-pagination"></div>
+                        <button class="swiper-btn swiper-btn--next">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section--color--light section--clip pt-100 pb-200">
+    <div class="container">
+        <div class="head ptm-40 mb-40">
+            <h2 class="title title--extra-bold title--color--dark">ПРАВИЛА КВИЗА "ДЕРЖИ ПЯТЬ!"</h2>
+        </div>
+        <div class="video">
+            <picture class="video__picture">
+                <img src="./assets/images/preview.png" alt="">
+            </picture>
+            <button class="video__button button button--play">
+                <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-play"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="section section--bg section--offset section--color--primary pt-100 pb-100"
+         style="background-image: url('./assets/images/pattern.png')">
+    <div class="container">
+        <div class="head mb-70">
+            <h2 class="title title--extra-bold title--color--dark">ДЛЯ КОГО ЭТА ИГРА?</h2>
+        </div>
+        <div class="slider slider--buttons" data-slider="default" data-slides="4">
+            <div class="swiper">
+                <div class="swiper-wrapper mb-35">
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-1.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех кому полюбились командные квизы и хочется играть еще и еще
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-2.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех, кто устал от существующих квизов и ищет чего-то совершенно нового
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-3.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для интеллектуалов и эрудитов
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-4.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех, кто стесняется или боится интеллектуальных игр, дабы не оплошать у всех на
+                                    виду
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-1.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех кому полюбились командные квизы и хочется играть еще и еще
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-2.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех, кто устал от существующих квизов и ищет чего-то совершенно нового
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-3.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для интеллектуалов и эрудитов
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-about">
+                            <picture class="article-about__picture">
+                                <img src="./assets/images/about-4.png" alt="">
+                            </picture>
+                            <div class="article-about__info">
+                                <p class="article-about__text">
+                                    Для тех, кто стесняется или боится интеллектуальных игр, дабы не оплошать у всех на
+                                    виду
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-control swiper-control--default">
+                    <button class="swiper-btn swiper-btn--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-btn swiper-btn--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section--color--dark section--pattern pt-125 pb-125" style="background-image: url('./assets/images/pattern.png')">
+    <div class="container">
+        <div class="about-preview">
+            <div class="about-preview__info">
+                <h2 class="about-preview__title">
+                    АТМОСФЕРА КВИЗА "ДЕРЖИ ПЯТЬ!"
+                </h2>
+                <p class="about-preview__text">
+                    Задача организации особенности же консультация с широким активом влечет за собой процесс.
+                </p>
+            </div>
+            <div class="about-preview__video">
+                <div class="video video--small">
+                    <picture class="video__picture">
+                        <img src="./assets/images/preview.png" alt="">
+                    </picture>
+                    <button class="video__button button button--play">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-play"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section--color--dark section--about--last">
+    <div class="container">
+        <div class="about__last">
+            <h2 class="title--extra-bold title--color--white about__last--title">Уникальность квиза "Держи пять!"</h2>
+            <div class="about__teasers mob-hidden">
+                <article class="about__teaser">
+                    <picture class="about__teaser--img">
+                        <img src="assets/images/about-teaser-1.png" alt="">
+                    </picture>
+                    <p class="about__teaser--descr">
+                        Все вопросы игры мы берем из самой жизни, а не из энциклопедий, задаем их сотням обычных
+                        прохожих от Калининграда до Хабаровска, а вам предстоит угадать самые популярные версии их
+                        ответов.
+                    </p>
+                </article>
+                <article class="about__teaser">
+                    <picture class="about__teaser--img">
+                        <img src="assets/images/about-teaser-2.png" alt="">
+                    </picture>
+                    <p class="about__teaser--descr">
+                        Единственный в мире квиз не на знания и эрудицию, а на логику и интуицию. </p>
+                </article>
+                <article class="about__teaser">
+                    <picture class="about__teaser--img">
+                        <img src="assets/images/about-teaser-3.png" alt="">
+                    </picture>
+                    <p class="about__teaser--descr">
+                        Самые неожиданные ответы респондентов мы покажем вам на игре в ярких видеороликах. </p>
+                </article>
+                <article class="about__teaser">
+                    <picture class="about__teaser--img">
+                        <img src="assets/images/about-teaser-4.png" alt="">
+                    </picture>
+                    <p class="about__teaser--descr">
+                        Мы разрешаем участникам игры пользоваться смартфонами, гуглить ответы и списывать
+                        у других команд – это все равно
+                        не поможет :) </p>
+                </article>
+            </div>
+            <div class="slider desktop-hidden" data-slider="default">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="about__teaser">
+                                <picture class="about__teaser--img">
+                                    <img src="assets/images/about-teaser-1.png" alt="">
+                                </picture>
+                                <p class="about__teaser--descr">
+                                    Все вопросы игры мы берем из самой жизни, а не из энциклопедий, задаем их сотням обычных
+                                    прохожих от Калининграда до Хабаровска, а вам предстоит угадать самые популярные версии их
+                                    ответов.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="about__teaser">
+                                <picture class="about__teaser--img">
+                                    <img src="assets/images/about-teaser-2.png" alt="">
+                                </picture>
+                                <p class="about__teaser--descr">
+                                    Единственный в мире квиз не на знания и эрудицию, а на логику и интуицию. </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="about__teaser">
+                                <picture class="about__teaser--img">
+                                    <img src="assets/images/about-teaser-3.png" alt="">
+                                </picture>
+                                <p class="about__teaser--descr">
+                                    Самые неожиданные ответы респондентов мы покажем вам на игре в ярких видеороликах. </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="about__teaser">
+                                <picture class="about__teaser--img">
+                                    <img src="assets/images/about-teaser-4.png" alt="">
+                                </picture>
+                                <p class="about__teaser--descr">
+                                    Мы разрешаем участникам игры пользоваться смартфонами, гуглить ответы и списывать
+                                    у других команд – это все равно
+                                    не поможет :) </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<footer class="footer footer--page section--bg" style="background-image: url('assets/images/footer-bg.jpg')">
+    <div class="container">
+        <div class="footer__wrapper">
+            <img src="assets/images/logo.svg" alt="" class="footer__logo">
+            <div class="footer__info">
+                <div class="footer__block footer__block--full order-desktop--4">
+                    <div class="footer--title">
+                        Разделы
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__item" href="/about.html">Об игре</a>
+                        <a class="nav__item" href="/corporates.html">Корпоративы</a>
+                        <a class="nav__item" href="/news.html">Новости</a>
+                        <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                        <a class="nav__item" href="/francise.html">Франшиза</a>
+                        <a class="nav__item" href="/contacts.html">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__block order-desktop--1">
+                    <div class="footer--title">
+                        Социальные сети
+                    </div>
+                    <aside class="footer__socials socials">
+                        <a href="#" class="socials__link">
+                            <svg class="icon--tg">
+                                <use href="assets/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--vk">
+                                <use href="assets/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--wa">
+                                <use href="assets/sprite.svg#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </aside>
+                </div>
+                <div class="footer__block order-desktop--2">
+                    <div class="footer--title">
+                        Контакты
+                    </div>
+                    <a href="tel:+7 (909) 792-22-20">+7 (909) 792-22-20</a>
+                </div>
+                <div class="footer__block order-desktop--3">
+                    <div class="footer--title">
+                        E-mail
+                    </div>
+                    <a href="mailto:+7 (909) 792-22-20">info@logoipsum.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__development">
+                    <a href="#">
+                        Разработано
+                        <img src="assets/images/diez-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__line"></div>
+
+                <div class="footer__legal">
+                    <p class="copyright">© 2024 «Держи пять». Все права защищены.</p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="hidden">
+    <div class="modal" id="game-register">
+        <button class="modal__close" data-close>
+            <svg>
+                <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title">РЕГИСТРАЦИЯ НА ИГРУ</h2>
+        <form action="#" class="modal__form">
+            <div class="modal__wrapper">
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Имя капитана*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Название команды*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Телефон</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Промокод</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Почта*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Откуда вы узнали о нас ?</span>
+                </label>
+            </div>
+            <div class="modal__block">
+                <p class="modal__text">кол-во человек, которое пойдёт:</p>
+                <div class="counter" data-counter>
+                    <button class="counter__button counter__button--prev" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <input type="number" class="input input--number" value="0" max="10" data-counter-input>
+                    <button class="counter__button counter__button--next" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal__block modal__block--revert">
+                <div class="modal__control">
+                    <button class="modal__button">Отправить заявку на игру</button>
+                    <button class="modal__button modal__button--yellow desktop-hidden" data-close>Отменить</button>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>В нашей команде<br>есть именинник</span>
+                </label>
+            </div>
+        </form>
+        <div class="modal__footer">
+            <p>Нажимая кнопку «Отправить заявку на игру», вы соглашаетесь с <a href="#">условиями пользовательского
+                соглашения</a></p>
+        </div>
+    </div>
+    <div class="modal modal--success" id="success">
+        <picture class="modal__picture">
+            <img src="./assets/images/logo-success.svg" alt="">
+        </picture>
+        <h2 class="modal__title">ваша заявка
+            успешно отправлена!</h2>
+    </div>
+</div>
+<!-- Временная секция для навигации по сайту -->
+<section class="section">
+    <div class="container">
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./about.html" class="temp__link">О нас</a>
+            <a href="./contacts.html" class="temp__link">Контакты</a>
+            <a href="./corporative.html" class="temp__link">Корпоратив</a>
+            <a href="./feedback.html" class="temp__link">Обратная связь</a>
+            <a href="./franchise.html" class="temp__link">Франчайзи</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./newsDetail.html" class="temp__link">Новости деталка</a>
+        </div>
+    </div>
+</section>
+<div class="up">
+    <svg class="up__icon">
+        <use xlink:href="./assets/sprite.svg#arrow-up"></use>
+    </svg>
+</div>
+<script defer src="bundle.js"></script></body>
+</html>

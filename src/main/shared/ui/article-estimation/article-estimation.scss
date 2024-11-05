@@ -1,0 +1,53 @@
+.article-estimation {
+  background-color: #0A2336;
+
+  &__content {
+    padding: 42px 64px 42px 78px;
+    border-bottom: 1px solid rgba($white, 0.1);
+
+    @include r($mobile) {
+      padding: 43px 25px 43px 22px;
+    }
+  }
+
+  &__footer {
+    padding: 30px 64px 40px 78px;
+    @include r($mobile) {
+      padding: 32px 22px 44px 22px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $white;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #C4F5FF;
+  }
+}

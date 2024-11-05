@@ -1,0 +1,123 @@
+.article-package {
+  display: flex;
+  flex-direction: column;
+  padding: 71px 16px;
+  border: 1px solid rgba($white, 0.2);
+  background-color: #0A2336;
+  transition: transform .2s linear;
+
+  @include r($mobile) {
+    padding: 71px 13px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 41px 60px 0 #031828F0;
+
+    @include r($mobile) {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .article-package__button {
+      display: flex;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba($white, 0.1);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-top: 28px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__preview {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31.5px;
+    letter-spacing: 0.05em;
+    color: $cyan;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba($white, 0.7);
+    text-align: center;
+
+    span {
+      font-weight: 600;
+      color: $white;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px 14px;
+    border-radius: 100px;
+    background-color: $yellow;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 25.2px;
+      letter-spacing: 0.05em;
+      color: $very-dark-blue;
+    }
+  }
+
+  &__button {
+    display: none;
+    margin-top: 12px;
+    width: 100%;
+    max-width: 244px;
+    background-color: $cyan;
+
+    @include r($mobile) {
+      display: flex;
+    }
+  }
+}

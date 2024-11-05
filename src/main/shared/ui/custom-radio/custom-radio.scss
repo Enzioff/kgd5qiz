@@ -1,0 +1,27 @@
+.custom-radio {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 26px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.02em;
+    color: #5B8C9F;
+    border-radius: 90px;
+    background-color: #B6EBFF;
+    cursor: pointer;
+    transition: .2s linear;
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ span {
+      color: $very-dark-blue;
+      background-color: $cyan;
+      box-shadow: 0 21px 38px 0 #82A7C391;
+    }
+  }
+}

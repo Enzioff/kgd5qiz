@@ -1,0 +1,20 @@
+.time {
+	max-width: 160px;
+	padding: 7px 22px;
+	border-radius: 40px;
+	color: $cyan;
+	font-size: 14px;
+	line-height: 25.2px;
+	font-weight: normal;
+
+	&--news {
+		background: #002d40;
+		@include r($mobile) {
+			background: #e9faff;
+		}
+	}
+
+	&--detail {
+		background: #e9faff;
+	}
+}

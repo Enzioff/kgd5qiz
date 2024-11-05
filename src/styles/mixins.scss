@@ -1,0 +1,105 @@
+@use 'sass:math';
+
+@mixin r($width) {
+	@media only screen and (max-width: $width+ 'px') {
+		@content;
+	}
+}
+
+@mixin rmin($width) {
+	@media only screen and (min-width: $width+ 'px') {
+		@content;
+	}
+}
+
+@mixin pt($size) {
+	padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+	.pt-#{$i} {
+		@include pt($i);
+	}
+}
+
+@mixin ptm($size) {
+	@include r($mobile) {
+		padding-top: math.div($size, 16) * 1rem;
+	}
+}
+
+@for $i from 1 through 200 {
+	.ptm-#{$i} {
+		@include ptm($i);
+	}
+}
+
+@mixin pb($size) {
+	padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+	.pb-#{$i} {
+		@include pb($i);
+	}
+}
+
+@mixin pbm($size) {
+	@include r($mobile) {
+		padding-bottom: math.div($size, 16) * 1rem;
+	}
+}
+
+@for $i from 1 through 200 {
+	.pbm-#{$i} {
+		@include pbm($i);
+	}
+}
+
+@mixin mt($size) {
+	//margin-top: $size + px;
+	margin-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+	.mt-#{$i} {
+		@include mt($i);
+	}
+}
+
+@mixin mtm($size) {
+	//margin-top: $size + px;
+	@include r($mobile) {
+		margin-top: math.div($size, 16) * 1rem;
+	}
+}
+
+@for $i from 0 through 200 {
+	.mtm-#{$i} {
+		@include mtm($i);
+	}
+}
+
+@mixin mb($size) {
+	//margin-bottom: $size + px;
+	margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+	.mb-#{$i} {
+		@include mb($i);
+	}
+}
+
+@mixin mbm($size) {
+	//margin-bottom: $size + px;
+	@include r($mobile) {
+		margin-bottom: math.div($size, 16) * 1rem;
+	}
+}
+
+@for $i from 0 through 200 {
+	.mbm-#{$i} {
+		@include mbm($i);
+	}
+}

@@ -1,0 +1,28 @@
+.show-more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    color: $cyan;
+  }
+
+  &__icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    fill: $cyan;
+    transform: rotate(90deg);
+    transition: .2s linear;
+  }
+
+  &--close {
+    .show-more__icon {
+      transform: rotate(-90deg);
+    }
+  }
+}

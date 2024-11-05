@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Держи пять</title>
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+<header class="header header--main">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="logo" href="/">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <div class="city-chooser mob-hidden">
+                <span>Калининград</span>
+                <svg class="icon icon--chooser">
+                    <use href="assets/sprite.svg#chevrone-city"></use>
+                </svg>
+            </div>
+            <nav class="nav mob-hidden">
+                <a class="nav__item" href="/about.html">Об игре</a>
+                <a class="nav__item" href="/news.html">Новости</a>
+                <a class="nav__item" href="/franchise.html">Франшиза</a>
+                <a class="nav__item" href="/corporative.html">Корпоративы</a>
+                <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                <a class="nav__item" href="/contacts.html">Контакты</a>
+            </nav>
+            <div class="burger" data-burger>
+                <span class="burger__item"></span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu" data-menu-mobile>
+        <a class="logo" href="/">
+            <img src="assets/images/logo.svg" alt="">
+        </a>
+        <div class="choose">
+            <p class="text">
+                Местоположение
+            </p>
+            <div class="city-chooser">
+                <span>Калининград</span>
+                <svg class="icon--chooser">
+                    <use href="assets/sprite.svg#chevrone-city"></use>
+                </svg>
+            </div>
+        </div>
+        <nav class="nav">
+            <a class="nav__item" href="/about.html">Об игре</a>
+            <a class="nav__item" href="/news.html">Новости</a>
+            <a class="nav__item active" href="/francise.html">Франшиза</a>
+            <a class="nav__item" href="/corporates.html">Корпоративы</a>
+            <a class="nav__item" href="/feedback.html">Обратная связь</a>
+            <a class="nav__item" href="/contacts.html">Контакты</a>
+        </nav>
+        <div class="mobile-menu__social">
+            <a href="#" class="mobile-menu__link">
+                <svg>
+                    <use href="./assets/sprite.svg#icon-tg"></use>
+                </svg>
+            </a>
+            <a href="#" class="mobile-menu__link">
+                <svg>
+                    <use href="./assets/sprite.svg#icon-vk"></use>
+                </svg>
+            </a>
+            <a href="#" class="mobile-menu__link">
+                <svg>
+                    <use href="./assets/sprite.svg#icon-wa"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside class="socials socials--fixed" data-social>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-tg"></use>
+        </svg>
+    </a>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-vk"></use>
+        </svg>
+    </a>
+    <a href="#" class="socials__link">
+        <svg>
+            <use href="./assets/sprite.svg#icon-wa"></use>
+        </svg>
+    </a>
+</aside>
+<div class="main">
+    <section class="section section--bg section--bg--intro" style="background-image: url('assets/images/header-bg.jpg')">
+    <div class="container">
+        <div class="intro">
+            <div class="slider slider--hidden slider--overflow" data-slider="thumbs" data-slides="1">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="intro__content">
+                                <picture class="intro__picture">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </picture>
+                                <div class="intro__text">
+                                    <span class="pretitle pretitle--white">ИНТЕЛЛЕКТУАЛЬНО-РАЗВЛЕКАТЕЛЬНАЯ БИТВА</span>
+                                    <h1 class="title title--extra-bold">
+                                        Игры, которые сделают твой вечер с друзьями незабываемым!
+                                    </h1>
+                                    <button class="button" data-fancybox data-src="#modal">
+                                        <span>Сыграть в заведении</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro__content">
+                                <picture class="intro__picture">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </picture>
+                                <div class="intro__text">
+                                    <span class="pretitle pretitle--white">ИНТЕЛЛЕКТУАЛЬНО-РАЗВЛЕКАТЕЛЬНАЯ БИТВА</span>
+                                    <h1 class="title title--extra-bold">
+                                        Игры, которые сделают твой вечер с друзьями незабываемым!
+                                    </h1>
+                                    <button class="button" data-fancybox data-src="#modal">
+                                        <span>Сыграть в заведении</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro__content">
+                                <picture class="intro__picture">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </picture>
+                                <div class="intro__text">
+                                    <span class="pretitle pretitle--white">ИНТЕЛЛЕКТУАЛЬНО-РАЗВЛЕКАТЕЛЬНАЯ БИТВА</span>
+                                    <h1 class="title title--extra-bold">
+                                        Игры, которые сделают твой вечер с друзьями незабываемым!
+                                    </h1>
+                                    <button class="button" data-fancybox data-src="#modal">
+                                        <span>Сыграть в заведении</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-control swiper-control--intro mob-hidden">
+                        <button class="swiper-btn swiper-btn--prev">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-btn swiper-btn--next">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider slider--games" data-thumb>
+                <div class="swiper">
+                    <div class="swiper-wrapper mb-20 mbm-0">
+                        <div class="swiper-slide">
+                            <article class="article-game">
+                                <div class="article-game__header">
+                                    <div class="article-game__preview">
+                                        <p class="article-game__text">Классическая</p>
+                                        <p class="article-game__date">4 марта</p>
+                                    </div>
+                                    <div class="article-game__info">
+                                        <h3 class="article-game__title">Женская игра</h3>
+                                        <time class="article-game__time" datetime="03.04.2024">
+                                            <svg class="article-game__icon article-game__icon--small">
+                                                <use xlink:href="./assets/sprite.svg#icon-clock"></use>
+                                            </svg>
+                                            <span>в 19:00</span>
+                                        </time>
+                                    </div>
+                                </div>
+                                <div class="article-game__detail">
+                                    <div class="article-game__item">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                                        </svg>
+                                        <p class="article-game__text">“Лондон”, просп. Мира, 33</p>
+                                    </div>
+                                    <div class="article-game__item article-game__item--yellow">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                                        </svg>
+                                        <p class="article-game__text">500 ₽ / чел.</p>
+                                    </div>
+                                </div>
+                                <div class="article-game__bg">
+                                    <img src="./assets/images/game-bg.png" alt="">
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-game">
+                                <div class="article-game__header">
+                                    <div class="article-game__preview">
+                                        <p class="article-game__text">Ближайшая игра</p>
+                                        <p class="article-game__date">4 марта</p>
+                                    </div>
+                                    <div class="article-game__info">
+                                        <h3 class="article-game__title">Женская игра</h3>
+                                        <time class="article-game__time" datetime="03.04.2024">
+                                            <svg class="article-game__icon article-game__icon--small">
+                                                <use xlink:href="./assets/sprite.svg#icon-clock"></use>
+                                            </svg>
+                                            <span>в 19:00</span>
+                                        </time>
+                                    </div>
+                                </div>
+                                <div class="article-game__detail">
+                                    <div class="article-game__item">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                                        </svg>
+                                        <p class="article-game__text">“Лондон”, просп. Мира, 33</p>
+                                    </div>
+                                    <div class="article-game__item article-game__item--yellow">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                                        </svg>
+                                        <p class="article-game__text">500 ₽ / чел.</p>
+                                    </div>
+                                </div>
+                                <div class="article-game__bg">
+                                    <img src="./assets/images/game-bg.png" alt="">
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-game">
+                                <div class="article-game__header">
+                                    <div class="article-game__preview">
+                                        <p class="article-game__text">Тематическая</p>
+                                        <p class="article-game__date">4 марта</p>
+                                    </div>
+                                    <div class="article-game__info">
+                                        <h3 class="article-game__title">Женская игра</h3>
+                                        <time class="article-game__time" datetime="03.04.2024">
+                                            <svg class="article-game__icon article-game__icon--small">
+                                                <use xlink:href="./assets/sprite.svg#icon-clock"></use>
+                                            </svg>
+                                            <span>в 19:00</span>
+                                        </time>
+                                    </div>
+                                </div>
+                                <div class="article-game__detail">
+                                    <div class="article-game__item">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                                        </svg>
+                                        <p class="article-game__text">“Лондон”, просп. Мира, 33</p>
+                                    </div>
+                                    <div class="article-game__item article-game__item--yellow">
+                                        <svg class="article-game__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-money"></use>
+                                        </svg>
+                                        <p class="article-game__text">500 ₽ / чел.</p>
+                                    </div>
+                                </div>
+                                <div class="article-game__bg">
+                                    <img src="./assets/images/game-bg.png" alt="">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mob-hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section section--color section--color--dark section--clip pt-130 ptm-50 pb-200 z-index-1">
+    <div class="container">
+        <div class="quiz">
+            <div class="quiz__head">
+                <h2 class="title title--extra-bold title--color--white title--upper">Что это за игра?</h2>
+                <div class="quiz__about">
+                    <div class="quiz__item">
+                        <p class="quiz__number">5</p>
+                        <p class="quiz__text">
+                            туров+блиц<br>
+                            <span>по 5</span><br>
+                            вопросов
+                        </p>
+                    </div>
+                    <div class="quiz__item">
+                        <p class="quiz__title">на которые дали ответ</p>
+                    </div>
+                    <div class="quiz__item">
+                        <p class="quiz__number">155</p>
+                        <p class="quiz__text">
+                            опрошенных респондентов
+                        </p>
+                    </div>
+                    <div class="quiz__item">
+                        <p class="quiz__text quiz__text--right">
+                            мы выбрали
+                        </p>
+                        <p class="quiz__number">5</p>
+                        <p class="quiz__text">
+                            популярных ответов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__gallery">
+                <div class="slider slider--hidden" data-slider="default" data-slides="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="article-gallery">
+                                    <picture class="article-gallery__picture">
+                                        <img src="./assets/images/gallery-1.png" alt="">
+                                    </picture>
+                                    <div class="article-gallery__info">
+                                        <p class="article-gallery__time">29.02.2024</p>
+                                        <h3 class="article-gallery__title">Название игры | название бара #2</h3>
+                                        <button class="button button--news">Смотреть все фото</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-gallery">
+                                    <picture class="article-gallery__picture">
+                                        <img src="./assets/images/gallery-1.png" alt="">
+                                    </picture>
+                                    <div class="article-gallery__info">
+                                        <p class="article-gallery__time">29.02.2024</p>
+                                        <h3 class="article-gallery__title">Название игры | название бара #3</h3>
+                                        <button class="button button--news">Смотреть все фото</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-gallery">
+                                    <picture class="article-gallery__picture">
+                                        <img src="./assets/images/gallery-1.png" alt="">
+                                    </picture>
+                                    <div class="article-gallery__info">
+                                        <p class="article-gallery__time">29.02.2024</p>
+                                        <h3 class="article-gallery__title">Название игры | название бара #4</h3>
+                                        <button class="button button--news">Смотреть все фото</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-control swiper-control--gallery">
+                            <button class="swiper-btn swiper-btn--blue swiper-btn--next">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions" data-tab>
+                    <div class="questions__header">
+                        <div class="questions__head active" data-tab-header>
+                            классические
+                        </div>
+                        <div class="questions__head" data-tab-header>
+                            тематические
+                        </div>
+                        <div class="questions__head" data-tab-header>
+                            кино и музыка
+                        </div>
+                        <div class="questions__selection desktop-hidden">
+                            <select name="#" class="questions__select desktop-hidden" data-tab-select>
+                                <option value="1">классические</option>
+                                <option value="2">тематические</option>
+                                <option value="3">кино и музыка</option>
+                            </select>
+                            <svg class="questions__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="questions__content">
+                        <div class="slider active" data-slider="default" data-tab-content>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа не<br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <span>Стадион</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Поле</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Улица</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Интернет</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Ипподром</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа не<br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <span>Тест - 1</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Тест - 2</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Тест - 3</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Тест - 4</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <span>Тест - 5</span>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-control swiper-control--question">
+                                    <button class="button button--news">Посмотреть ответы</button>
+                                    <button class="swiper-btn swiper-btn--light swiper-btn--next">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider" data-slider="default" data-tab-content>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа <br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа не<br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-control swiper-control--question">
+                                    <button class="button button--news">Посмотреть ответы</button>
+                                    <button class="swiper-btn swiper-btn--light swiper-btn--next">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider" data-slider="default" data-tab-content>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа не<br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="questions__item">
+                                            <p class="questions__text">Угадайте самый популярный ответ</p>
+                                            <h3 class="questions__title">Какого соседа не<br>любишь больше всего?</h3>
+                                            <div class="questions__ladder">
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="questions__position">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-control swiper-control--question">
+                                    <button class="button button--news">Посмотреть ответы</button>
+                                    <button class="swiper-btn swiper-btn--light swiper-btn--next">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section section--color section--color--light section--offset section--clip pb-125">
+    <div class="container">
+        <div class="map__content">
+            <div class="map__content--text">
+                <h2 class="map__content--title">
+                    Здесь уже играют!
+                </h2>
+                <p class="map__content--descr">
+                    Задача организации особенности же консультация с широким активом влечет за собой процесс.
+                </p>
+            </div>
+            <div class="map">
+                <img src="assets/images/map.svg" alt="map">
+                <div class="map__point" style="top: 53%; left: 0;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 45.5%; left: 9.4%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 49.3%; left: 15%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 54%; left: 12%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 60%; left: 7.6%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 65%; left: 11.2%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 59%; left: 21%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 79.5%; left: 10.2%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 81%; left: 7%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 86%; left: 9.2%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 44%; left: 28%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 79%; left: 45.5%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 72%; left: 75%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 73%; left: 79.7%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 71.3%; left: 83%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+                <div class="map__point" style="top: 86%; left: 80%;">
+                    <a href="#" class="map__link">
+                        <svg class="map__icon">
+                            <use href="./assets/sprite.svg#location-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="map__info">
+                        <span>Калининград</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section section--color--dark section--offset pb-150 pbm-80">
+    <div class="container">
+        <div class="head ptm-40 mb-40">
+            <h2 class="title title--extra-bold title--color--white">заголовок в одну строчку</h2>
+        </div>
+        <div class="video" data-fancybox data-src="https://www.youtube.com/watch?v=rn-fGxWlnhM">
+            <picture class="video__picture">
+                <img src="./assets/images/preview.png" alt="">
+            </picture>
+            <button class="video__button button button--play">
+                <svg>
+                    <use xlink:href="./assets/sprite.svg#icon-play"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+    <section class="section section--color--dark section--border pbm-60">
+    <div class="container">
+        <div class="upcoming">
+            <div class="head">
+                <h2 class="title title--color--white title--extra-bold">ближайшие игры</h2>
+            </div>
+            <div class="slider slider--buttons" data-slider="double">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-upcoming article-upcoming--reserve">
+                                <div class="article-upcoming__top">
+                                    <svg class="article-upcoming__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-people"></use>
+                                    </svg>
+                                    <p class="article-upcoming__status">Резерв</p>
+                                </div>
+                                <div class="article-upcoming__info">
+                                    <div class="article-upcoming__head">
+                                        <div class="article-upcoming__detail">
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-calendar"></use>
+                                                </svg>
+                                                <p class="label__text">29 февраля 2024</p>
+                                            </div>
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-time"></use>
+                                                </svg>
+                                                <p class="label__text">19:00</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="article-upcoming__title">
+                                            Название квиза
+                                            в две строчки
+                                        </h3>
+                                    </div>
+                                    <p class="article-upcoming__text">
+                                        РК “Резиденция Королей”.
+                                        Пивной ресторан “Брецель”
+                                        г. Калининград,
+                                        ул. Александра Невского, 12.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-upcoming article-upcoming--free">
+                                <div class="article-upcoming__top">
+                                    <svg class="article-upcoming__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-people"></use>
+                                    </svg>
+                                    <p class="article-upcoming__status">Места есть</p>
+                                </div>
+                                <div class="article-upcoming__info">
+                                    <div class="article-upcoming__head">
+                                        <div class="article-upcoming__detail">
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-calendar"></use>
+                                                </svg>
+                                                <p class="label__text">29 февраля 2024</p>
+                                            </div>
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-time"></use>
+                                                </svg>
+                                                <p class="label__text">19:00</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="article-upcoming__title">
+                                            Название квиза
+                                            в две строчки
+                                        </h3>
+                                    </div>
+                                    <p class="article-upcoming__text">
+                                        РК “Резиденция Королей”.
+                                        Пивной ресторан “Брецель”
+                                        г. Калининград,
+                                        ул. Александра Невского, 12.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-upcoming article-upcoming--free">
+                                <div class="article-upcoming__top">
+                                    <svg class="article-upcoming__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-people"></use>
+                                    </svg>
+                                    <p class="article-upcoming__status">Места есть</p>
+                                </div>
+                                <div class="article-upcoming__info">
+                                    <div class="article-upcoming__head">
+                                        <div class="article-upcoming__detail">
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-calendar"></use>
+                                                </svg>
+                                                <p class="label__text">29 февраля 2024</p>
+                                            </div>
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-time"></use>
+                                                </svg>
+                                                <p class="label__text">19:00</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="article-upcoming__title">
+                                            Название квиза
+                                            в две строчки
+                                        </h3>
+                                    </div>
+                                    <p class="article-upcoming__text">
+                                        РК “Резиденция Королей”.
+                                        Пивной ресторан “Брецель”
+                                        г. Калининград,
+                                        ул. Александра Невского, 12.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-upcoming article-upcoming--free">
+                                <div class="article-upcoming__top">
+                                    <svg class="article-upcoming__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-people"></use>
+                                    </svg>
+                                    <p class="article-upcoming__status">Места есть</p>
+                                </div>
+                                <div class="article-upcoming__info">
+                                    <div class="article-upcoming__head">
+                                        <div class="article-upcoming__detail">
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-calendar"></use>
+                                                </svg>
+                                                <p class="label__text">29 февраля 2024</p>
+                                            </div>
+                                            <div class="label">
+                                                <svg class="label__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-time"></use>
+                                                </svg>
+                                                <p class="label__text">19:00</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="article-upcoming__title">
+                                            Название квиза
+                                            в две строчки
+                                        </h3>
+                                    </div>
+                                    <p class="article-upcoming__text">
+                                        РК “Резиденция Королей”.
+                                        Пивной ресторан “Брецель”
+                                        г. Калининград,
+                                        ул. Александра Невского, 12.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-control swiper-control--single">
+                        <button class="swiper-btn swiper-btn--next">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section section--color--light pt-100 pb-120 pbm-40">
+    <div class="container">
+        <div class="head mb-60">
+            <h2 class="title title--extra-bold title--color--dark">ЯРКИЕ ЭМОЦИИ ГАРАНТИРОВАНЫ</h2>
+        </div>
+        <div class="slider slider--buttons" data-slider="default" data-slides="3">
+            <div class="swiper">
+                <div class="swiper-wrapper mb-30">
+                    <div class="swiper-slide">
+                        <article class="article-review">
+                            <div class="article-review__top">
+                                <picture class="article-review__avatar">
+                                    <img src="https://placehold.co/600x400" alt="">
+                                </picture>
+                                <div class="article-review__author">
+                                    <h3 class="article-review__name">Олеся</h3>
+                                    <p class="article-review__place">Женская игра, Калининград</p>
+                                </div>
+                            </div>
+                            <div class="article-review__body" data-text-hidden>
+                                <div class="article-review__content" data-hidden-block>
+                                    <p class="article-review__text text-overflow--7">
+                                        Таким образом, семантический разбор внешних противодействий является качественно
+                                        новой ступенью прогресса профессионального сообщества. Также как убеждённость
+                                        некоторых оппонентов создаёт необходимость включения в производственный план целого
+                                        ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                        стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности
+                                        структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                                        маркетинга над разумом и должны быть заблокированы в рамках своих собственных
+                                        рациональных ограничений.
+                                    </p>
+                                </div>
+                                <button class="show-more" data-hidden-button>
+                                    <span>Ещё</span>
+                                    <svg class="show-more__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-review">
+                            <div class="article-review__top">
+                                <picture class="article-review__avatar">
+                                    <img src="https://placehold.co/600x400" alt="">
+                                </picture>
+                                <div class="article-review__author">
+                                    <h3 class="article-review__name">Олеся</h3>
+                                    <p class="article-review__place">Женская игра, Калининград</p>
+                                </div>
+                            </div>
+                            <div class="article-review__body" data-text-hidden>
+                                <div class="article-review__content" data-hidden-block>
+                                    <p class="article-review__text text-overflow--7">
+                                        Таким образом, семантический разбор внешних противодействий является качественно
+                                        новой ступенью прогресса профессионального сообщества. Также как убеждённость
+                                        некоторых оппонентов создаёт необходимость включения в производственный план целого
+                                        ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                        стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности
+                                        структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                                        маркетинга над разумом и должны быть заблокированы в рамках своих собственных
+                                        рациональных ограничений.
+                                    </p>
+                                </div>
+                                <button class="show-more" data-hidden-button>
+                                    <span>Ещё</span>
+                                    <svg class="show-more__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-review">
+                            <div class="article-review__top">
+                                <picture class="article-review__avatar">
+                                    <img src="https://placehold.co/600x400" alt="">
+                                </picture>
+                                <div class="article-review__author">
+                                    <h3 class="article-review__name">Олеся</h3>
+                                    <p class="article-review__place">Женская игра, Калининград</p>
+                                </div>
+                            </div>
+                            <div class="article-review__body" data-text-hidden>
+                                <div class="article-review__content" data-hidden-block>
+                                    <p class="article-review__text text-overflow--7">
+                                        Таким образом, семантический разбор внешних противодействий является качественно
+                                        новой ступенью прогресса профессионального сообщества. Также как убеждённость
+                                        некоторых оппонентов создаёт необходимость включения в производственный план целого
+                                        ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                        стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности
+                                        структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                                        маркетинга над разумом и должны быть заблокированы в рамках своих собственных
+                                        рациональных ограничений.
+                                    </p>
+                                </div>
+                                <button class="show-more" data-hidden-button>
+                                    <span>Ещё</span>
+                                    <svg class="show-more__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-review">
+                            <div class="article-review__top">
+                                <picture class="article-review__avatar">
+                                    <img src="https://placehold.co/600x400" alt="">
+                                </picture>
+                                <div class="article-review__author">
+                                    <h3 class="article-review__name">Олеся</h3>
+                                    <p class="article-review__place">Женская игра, Калининград</p>
+                                </div>
+                            </div>
+                            <div class="article-review__body" data-text-hidden>
+                                <div class="article-review__content" data-hidden-block>
+                                    <p class="article-review__text text-overflow--7">
+                                        Таким образом, семантический разбор внешних противодействий является качественно
+                                        новой ступенью прогресса профессионального сообщества. Также как убеждённость
+                                        некоторых оппонентов создаёт необходимость включения в производственный план целого
+                                        ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                        стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности
+                                        структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                                        маркетинга над разумом и должны быть заблокированы в рамках своих собственных
+                                        рациональных ограничений.
+                                    </p>
+                                </div>
+                                <button class="show-more" data-hidden-button>
+                                    <span>Ещё</span>
+                                    <svg class="show-more__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-review">
+                            <div class="article-review__top">
+                                <picture class="article-review__avatar">
+                                    <img src="https://placehold.co/600x400" alt="">
+                                </picture>
+                                <div class="article-review__author">
+                                    <h3 class="article-review__name">Олеся</h3>
+                                    <p class="article-review__place">Женская игра, Калининград</p>
+                                </div>
+                            </div>
+                            <div class="article-review__body" data-text-hidden>
+                                <div class="article-review__content" data-hidden-block>
+                                    <p class="article-review__text text-overflow--7">
+                                        Таким образом, семантический разбор внешних противодействий является качественно
+                                        новой ступенью прогресса профессионального сообщества. Также как убеждённость
+                                        некоторых оппонентов создаёт необходимость включения в производственный план целого
+                                        ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                        стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности
+                                        структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                                        маркетинга над разумом и должны быть заблокированы в рамках своих собственных
+                                        рациональных ограничений.
+                                    </p>
+                                </div>
+                                <button class="show-more" data-hidden-button>
+                                    <span>Ещё</span>
+                                    <svg class="show-more__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-control swiper-control--default">
+                    <button class="swiper-btn swiper-btn--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-btn swiper-btn--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper-pagination swiper-pagination--blue"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section section--color--light pt-120 ptm-40 pb-100">
+    <div class="container">
+        <article class="application">
+            <div class="application__left">
+                <picture class="application__picture">
+                    <img src="./assets/images/app-1.png" alt="">
+                </picture>
+            </div>
+            <div class="application__detail">
+                <div class="application__info">
+                    <p class="pretitle pretitle--white">ИНТЕЛЛЕКТУАЛЬНО-РАЗВЛЕКАТЕЛЬНАЯ БИТВА</p>
+                    <h2 class="title title--extra-bold title--color--dark title--upper">текст про подачу заявки на две строки</h2>
+                </div>
+                <button class="button" data-fancybox data-src="#">Подать заявку</button>
+            </div>
+        </article>
+    </div>
+</section>
+    <section class="section section--color--light pb-100">
+    <div class="container">
+        <div class="head mb-60">
+            <h2 class="title title--upper title--extra-bold title--color--dark">Новости</h2>
+        </div>
+        <div class="slider slider--buttons mb-40" data-slider="default" data-slides="2">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="article-news">
+                            <div class="article-news__picture">
+                                <img src="assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="article-news__info">
+                                <time class="time time--news" datetime="2020.25.10">25 октября 2020</time>
+                                <h2 class="article-news__title">Онлайн тимбилдинг на всю страну </h2>
+                                <p class="article-news__preview">Таким образом, семантический разбор внешних противодействий
+                                    является качественно новой ступенью прогресса профессионального сообщества. Также как
+                                    убеждённость некоторых оппонентов создаёт необходимость включения в производственный план
+                                    целого ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                    стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры
+                                    проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                                    должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                                <a href="/newsDetail.html" class="article-news__link">Читать<svg
+                                        class="article-news__link--icon">
+                                    <use href="assets/sprite.svg#chevrone-news"></use>
+                                </svg></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-news">
+                            <div class="article-news__picture">
+                                <img src="assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="article-news__info">
+                                <time class="time time--news" datetime="2020.25.10">25 октября 2020</time>
+                                <h2 class="article-news__title">Онлайн тимбилдинг на всю страну </h2>
+                                <p class="article-news__preview">Таким образом, семантический разбор внешних противодействий
+                                    является качественно новой ступенью прогресса профессионального сообщества. Также как
+                                    убеждённость некоторых оппонентов создаёт необходимость включения в производственный план
+                                    целого ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                    стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры
+                                    проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                                    должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                                <a href="/newsDetail.html" class="article-news__link">Читать<svg
+                                        class="article-news__link--icon">
+                                    <use href="assets/sprite.svg#chevrone-news"></use>
+                                </svg></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-news">
+                            <div class="article-news__picture">
+                                <img src="assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="article-news__info">
+                                <time class="time time--news" datetime="2020.25.10">25 октября 2020</time>
+                                <h2 class="article-news__title">Онлайн тимбилдинг на всю страну </h2>
+                                <p class="article-news__preview">Таким образом, семантический разбор внешних противодействий
+                                    является качественно новой ступенью прогресса профессионального сообщества. Также как
+                                    убеждённость некоторых оппонентов создаёт необходимость включения в производственный план
+                                    целого ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                    стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры
+                                    проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                                    должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                                <a href="/newsDetail.html" class="article-news__link">Читать<svg
+                                        class="article-news__link--icon">
+                                    <use href="assets/sprite.svg#chevrone-news"></use>
+                                </svg></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="article-news">
+                            <div class="article-news__picture">
+                                <img src="assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="article-news__info">
+                                <time class="time time--news" datetime="2020.25.10">25 октября 2020</time>
+                                <h2 class="article-news__title">Онлайн тимбилдинг на всю страну </h2>
+                                <p class="article-news__preview">Таким образом, семантический разбор внешних противодействий
+                                    является качественно новой ступенью прогресса профессионального сообщества. Также как
+                                    убеждённость некоторых оппонентов создаёт необходимость включения в производственный план
+                                    целого ряда внеочередных мероприятий с учётом комплекса новых предложений. В своём
+                                    стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры
+                                    проекта представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                                    должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                                <a href="/newsDetail.html" class="article-news__link">Читать<svg
+                                        class="article-news__link--icon">
+                                    <use href="assets/sprite.svg#chevrone-news"></use>
+                                </svg></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-control swiper-control--default">
+                    <button class="swiper-btn swiper-btn--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-btn swiper-btn--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button button--news centered">Все новости</a>
+    </div>
+</section>
+    <section class="section section--color--light pb-150">
+    <div class="container">
+        <div class="promo-block">
+            <article class="article-promo">
+                <picture class="article-promo__picture">
+                    <img src="./assets/images/promo-1.png" alt="">
+                </picture>
+                <div class="article-promo__info">
+                    <h2 class="article-promo__title">
+                        Как запустить “Держи Пять!” в моём городе?
+                    </h2>
+                    <p class="article-promo__text">
+                        В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые.
+                    </p>
+                </div>
+            </article>
+            <article class="article-promo article-promo--pink" style="background-image: url('./assets/images/promo-2.png')">
+                <picture class="article-promo__picture">
+                </picture>
+                <div class="article-promo__info">
+                    <h2 class="article-promo__title">
+                        Как запустить “Держи Пять!” в моём городе?
+                    </h2>
+                    <p class="article-promo__text">
+                        В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+</div>
+<footer class="footer section--bg" style="background-image: url('assets/images/footer-bg.jpg')">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <img src="assets/images/logo.svg" alt="" class="footer__logo">
+                <div class="footer__block footer__block--full">
+                    <div class="footer--title">
+                        Разделы
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__item" href="/about.html">Об игре</a>
+                        <a class="nav__item" href="/corporates.html">Корпоративы</a>
+                        <a class="nav__item" href="/news.html">Новости</a>
+                        <a class="nav__item" href="/feedback.html">Обратная связь</a>
+                        <a class="nav__item" href="/francise.html">Франшиза</a>
+                        <a class="nav__item" href="/contacts.html">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        Социальные сети
+                    </div>
+                    <aside class="footer__socials socials">
+                        <a href="#" class="socials__link">
+                            <svg class="icon--tg">
+                                <use href="assets/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--vk">
+                                <use href="assets/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="icon--wa">
+                                <use href="assets/sprite.svg#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </aside>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        Контакты
+                    </div>
+                    <a href="tel:+7 (909) 792-22-20">+7 (909) 792-22-20</a>
+                </div>
+                <div class="footer__block">
+                    <div class="footer--title">
+                        E-mail
+                    </div>
+                    <a href="mailto:+7 (909) 792-22-20">info@logoipsum.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__development">
+                    <a href="#">
+                        Разработано
+                        <img src="assets/images/diez-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__line"></div>
+
+                <div class="footer__legal">
+                    <p class="copyright">© 2024 «Держи пять». Все права защищены.</p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="hidden">
+    <div class="modal" id="game-register">
+        <button class="modal__close" data-close>
+            <svg>
+                <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title">РЕГИСТРАЦИЯ НА ИГРУ</h2>
+        <form action="#" class="modal__form">
+            <div class="modal__wrapper">
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Имя капитана*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Название команды*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Телефон</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Промокод</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY" required>
+                    <span>Почта*</span>
+                </label>
+                <label class="input-wrapper">
+                    <input class="input" type="text" placeholder="" name="CITY">
+                    <span>Откуда вы узнали о нас ?</span>
+                </label>
+            </div>
+            <div class="modal__block">
+                <p class="modal__text">кол-во человек, которое пойдёт:</p>
+                <div class="counter" data-counter>
+                    <button class="counter__button counter__button--prev" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                    <input type="number" class="input input--number" value="0" max="10" data-counter-input>
+                    <button class="counter__button counter__button--next" type="button" data-counter-button>
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal__block modal__block--revert">
+                <div class="modal__control">
+                    <button class="modal__button">Отправить заявку на игру</button>
+                    <button class="modal__button modal__button--yellow desktop-hidden" data-close>Отменить</button>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>В нашей команде<br>есть именинник</span>
+                </label>
+            </div>
+        </form>
+        <div class="modal__footer">
+            <p>Нажимая кнопку «Отправить заявку на игру», вы соглашаетесь с <a href="#">условиями пользовательского
+                соглашения</a></p>
+        </div>
+    </div>
+    <div class="modal modal--success" id="success">
+        <picture class="modal__picture">
+            <img src="./assets/images/logo-success.svg" alt="">
+        </picture>
+        <h2 class="modal__title">ваша заявка
+            успешно отправлена!</h2>
+    </div>
+</div>
+<!-- Временная секция для навигации по сайту -->
+<section class="section">
+    <div class="container">
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./about.html" class="temp__link">О нас</a>
+            <a href="./contacts.html" class="temp__link">Контакты</a>
+            <a href="./corporative.html" class="temp__link">Корпоратив</a>
+            <a href="./feedback.html" class="temp__link">Обратная связь</a>
+            <a href="./franchise.html" class="temp__link">Франчайзи</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./newsDetail.html" class="temp__link">Новости деталка</a>
+        </div>
+    </div>
+</section>
+<div class="hidden">
+    <div class="modal" id="modal-info">
+        <div class="info">
+            <picture class="info__picture">
+                <img src="" alt="">
+            </picture>
+            <div class="info__detail">
+                <h3 class="info__title">
+
+                </h3>
+                <p class="info__text">
+
+                </p>
+                <a href="#" class="button">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="up">
+    <svg class="up__icon">
+        <use xlink:href="./assets/sprite.svg#arrow-up"></use>
+    </svg>
+</div>
+<script defer src="bundle.js"></script></body>
+
+</html>

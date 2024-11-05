@@ -1,0 +1,178 @@
+.article-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  padding: 40px;
+  border-radius: 30px;
+
+  &--first {
+    grid-row-start: 12;
+    height: 509px;
+
+    @include r($mobile) {
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+
+  &--second {
+    grid-row-end: span 37;
+    height: 395px;
+
+    @include r($mobile) {
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+
+  &--third {
+    grid-column: 2/3;
+    grid-row-end: span 37;
+    height: 400px;
+
+    @include r($mobile) {
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+
+  &--fourth {
+    grid-row-start: 11;
+    grid-column: 3/4;
+    height: 515px;
+
+    @include r($mobile) {
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+
+  &--fifth {
+    grid-row-start: 7;
+    grid-column: 4/5;
+    height: 560px;
+
+    @include r($mobile) {
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--primary {
+    background-color: $cyan;
+  }
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    pointer-events: none;
+    z-index: 0;
+
+    &--center {
+      right: initial;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 31.5px;
+    color: $very-dark-blue;
+    text-transform: uppercase;
+    z-index: 1;
+
+    &--bottom {
+      margin-top: auto;
+    }
+  }
+
+  &__qualities {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--1 {
+      left: -52px;
+      bottom: -130px;
+      width: 260px;
+      height: 182px;
+      transform: rotate(22deg);
+
+      @include r($mobile) {
+        bottom: initial;
+        left: initial;
+        top: -50px;
+        right: -40px;
+        width: 200px;
+        height: 121px;
+        transform: rotate(40deg);
+      }
+    }
+
+    &--2 {
+      top: -43px;
+      left: -180px;
+      width: 217px;
+      height: 156px;
+      @include r($mobile) {
+        width: 180px;
+        height: 130px;
+        left: initial;
+        right: -40px;
+      }
+    }
+
+    &--3 {
+      top: 172px;
+      right: -491px;
+      width: 217px;
+      height: 156px;
+      z-index: 1;
+
+      @include r($mobile) {
+        width: 180px;
+        height: 130px;
+        top: -43px;
+        right: -40px;
+      }
+    }
+
+    &--4 {
+      top: -104px;
+      left: 33px;
+      width: 238px;
+      height: 93px;
+      transform: rotate(20deg);
+      @include r($mobile) {
+        width: 180px;
+        height: 70px;
+        top: -40px;
+        left: initial;
+        right: -30px;
+      }
+    }
+
+    &--5 {
+      top: -87px;
+      left: 64px;
+      width: 160px;
+      height: 128px;
+      transform: rotate(13deg);
+
+      @include r($mobile) {
+        top: -60px;
+        left: initial;
+        right: -30px;
+      }
+    }
+  }
+}

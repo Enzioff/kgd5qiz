@@ -1,0 +1,35 @@
+.icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  &--chooser {
+    height: 7px;
+    width: 7px;
+    fill: rgba($very-dark-blue, .6);
+
+    @include r($mobile) {
+      fill: $cyan;
+    }
+  }
+
+  &--tg {
+    width: 17px;
+    height: 14px;
+  }
+
+  &--vk {
+    width: 17px;
+    height: 11px;
+  }
+
+  &--wa {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--ranking {
+    width: 24px;
+    height: 24px;
+  }
+}

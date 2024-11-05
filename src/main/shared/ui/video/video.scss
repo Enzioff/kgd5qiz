@@ -1,0 +1,54 @@
+.video {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include r($mobile) {
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+
+  &--small {
+    height: 100%;
+    max-height: 400px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #0A233666;
+  }
+
+  &__picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}

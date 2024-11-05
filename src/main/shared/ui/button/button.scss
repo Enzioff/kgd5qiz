@@ -1,0 +1,89 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 268px;
+  padding: 15px 24px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  border-radius: 100px;
+  box-shadow: 0 21px 38px 0 rgba(0, 158, 184, 0.57);
+  background-color: #feefa8;
+  cursor: pointer;
+
+  @include r($mobile) {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &--news {
+    box-shadow: unset;
+    border: 2px solid rgba(21, 227, 41, 0.1);
+    font-weight: bold;
+    line-height: 100%;
+    z-index: 2;
+    pointer-events: auto;
+  }
+
+  &--about {
+    box-shadow: unset;
+    justify-content: flex-start;
+    margin-top: 45px;
+    gap: 10px;
+    line-height: initial;
+    font-size: 21px;
+    border: 2px solid rgba(21, 227, 41, 0.1);
+  }
+
+  &--play {
+    width: 122px;
+    height: 122px;
+    box-shadow: unset;
+
+    @include r($mobile) {
+      width: 47px;
+      height: 47px;
+    }
+
+    svg {
+      display: flex;
+      width: 36px;
+      height: 36px;
+
+      @include r($mobile) {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  &--small {
+    align-items: center;
+    gap: 10px;
+    background-color: $cyan;
+    box-shadow: none;
+    max-width: none;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.02em;
+    color: $very-dark-blue;
+
+    @include r($mobile) {
+      padding: 15px 24px;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+
+  &--blue {
+    background-color: $cyan;
+    box-shadow: 0 21px 38px 0 #82A7C391;
+  }
+
+  &--opacity {
+    background-color: #1E535E;
+  }
+}

@@ -1,0 +1,20 @@
+.city-chooser {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	cursor: pointer;
+
+	@include r($mobile) {
+		padding: 10px 10px 10px 0;
+	}
+
+	span {
+		font-size: 18px;
+		color: rgba($very-dark-blue, .6);
+
+		@include r($mobile) {
+			color: $cyan;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.application {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 51px 0 29px;
+  border-radius: 20px;
+  background-color: $cyan;
+  background-image: url('../assets/images/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include r($mobile) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px 315px;
+  }
+
+  &--franchise {
+    @include r($mobile) {
+      padding-bottom: 40px;
+    }
+    .application__left {
+      @include r($mobile) {
+        position: static;
+        transform: none;
+      }
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+
+    @include r($mobile) {
+      position: static;
+    }
+
+    &--franchise {
+      top: -90px;
+      bottom: initial;
+
+      @include r($mobile) {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: static;
+      }
+    }
+  }
+
+  &__left {
+    position: relative;
+
+    @include r($mobile) {
+      position: absolute;
+      bottom: -5px;
+      right: -49px;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 38px 0 38px 50px;
+    width: 540px;
+    border-left: 2px solid rgba($white, 0.5);
+
+    @include r($mobile) {
+      align-items: flex-start;
+      width: auto;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
