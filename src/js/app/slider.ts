@@ -21,27 +21,27 @@ class Slider {
 
     initSlider() {
         switch (this.element.getAttribute('data-slider')) {
-            case 'grid':
-                this.initGamesSlider();
-                break;
-            case 'newsDetail':
-                this.initNewsDetailSlider();
-                break;
-            case 'default':
-                this.initDefaultSlider();
-                break;
-            case 'double':
-                this.initDoubleSlider();
-                break;
-            case 'thumbs':
-                this.initThumbsSlider();
-                break;
-            case 'infinite':
-                this.initInfiniteSlider();
-                break;
-            case 'about':
-                this.initAboutSlider();
-                break;
+        case 'grid':
+            this.initGamesSlider();
+            break;
+        case 'newsDetail':
+            this.initNewsDetailSlider();
+            break;
+        case 'default':
+            this.initDefaultSlider();
+            break;
+        case 'double':
+            this.initDoubleSlider();
+            break;
+        case 'thumbs':
+            this.initThumbsSlider();
+            break;
+        case 'infinite':
+            this.initInfiniteSlider();
+            break;
+        case 'about':
+            this.initAboutSlider();
+            break;
         }
     }
 

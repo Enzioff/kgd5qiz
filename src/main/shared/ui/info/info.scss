@@ -11,6 +11,7 @@
     padding: 20px;
     flex-direction: column;
     gap: 20px;
+    overflow-y: auto;
   }
 
   &__picture {
@@ -66,12 +67,10 @@
 
   &__text {
     margin-bottom: 16px;
-    max-height: 435px;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: $very-dark-blue;
-    overflow-y: auto;
 
     &::-webkit-scrollbar {
       width: 6px;
@@ -86,7 +85,6 @@
 
     @include r($mobile) {
       margin-bottom: 0;
-      max-height: 300px;
       font-size: 16px;
       line-height: 21px;
     }
