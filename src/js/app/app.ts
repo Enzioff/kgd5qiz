@@ -123,9 +123,18 @@ class App {
             innerSliders.forEach(innerSlider => {
                 const sliderSldies = innerSlider.querySelectorAll('.swiper-slide')
                 const openBtn = innerSlider.querySelector('.button.button--news');
+                const starsBlock = innerSlider.querySelectorAll('.questions__position');
+
+                starsBlock.forEach(block => {
+                    block.addEventListener('click', () => {
+                        const icons = block.querySelectorAll('.icon');
+                        const answer = block.querySelector('span');
+                        icons.forEach(el => el.remove())
+                        answer.style.display = 'flex';
+                    })
+                })
 
                 openBtn.addEventListener('click', () => {
-                    console.log('click')
                     const activeSlide = Array.from(sliderSldies).filter(el => el.classList.contains('swiper-slide-active'));
                     if (activeSlide[0]) {
                         const icons = activeSlide[0].querySelectorAll('.icon');
